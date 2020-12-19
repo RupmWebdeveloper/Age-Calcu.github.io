@@ -102,17 +102,14 @@ html {
 	margin: 50px auto;
 }
 #empty{
-	position: relative;
 	height: 275px;
 	width: 100%;
+    position: relative;
 }
 #info-id,#info-id-a,#success-id,.alert-info{
 	text-align: center;
 	margin: 1% auto;
 	width: 70%;
-}
-#info-id-a{
-    width: 799%;
 }
 #age_current{
 	font-size: 14px;
@@ -144,7 +141,6 @@ footer
 	width: 100%;
 	background-color: rgba(3, 3, 3, 0.2);
 	
-	
 }
 .footer-div{
 	height: 0px;
@@ -161,11 +157,63 @@ footer
 	margin-left: 6px;
 }
 /* Hover effect */
-#input-id,#o-1,#m-point,#o-2,#bbo:hover{
+#input-id,#o-1,#male-1,#m-point,#o-2,#bbo:hover{
 	cursor: pointer;
 }
 /* media */
-@media only screen and (min-width: 600px) {
+/*Extra small devices (phones, small-phone) */
+@media only screen and ( max-width: 480px) {
+        .maindiv-1,.result-span{
+        font-size: 46px;
+    }
+    .maindiv-1::after{
+	   width:40px;
+}
+    .section-two-class-4::after{
+        width:40px;
+    }
+    
+    .section-two-class-1{
+        font-size: 30px;
+    }
+    .section-two-class-span-1,.section-two-class-span-2,.Select-one,.last-one-span{
+        font-size: 25px;
+    }
+    .section-two-input-class-2,#button-cls,.section-two-class-3{
+        font-size: 35px;
+    }
+    #o-1,#o-2,#id_warn,#success-id,#info-id{
+         zoom:2;
+    }
+    #bbo{
+	margin-left: 11px;
+    }
+    #empty{
+        height: 670px;
+	    width: 100%;
+        overflow-y: scroll;
+    }
+    footer{
+        position: absolute;
+        top:109%;
+        height: 110px;
+    }
+    .Devloped{
+        zoom:2.2;
+        margin-top: 5px;
+    }
+    #info-id,#info-id-a,#success-id,.alert-info{
+	text-align: center;
+	margin: 3% auto;
+	width: 70%;
+}
+    .same-1{
+        display: block;
+    }
+    
+}
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
     .maindiv-1,.result-span{
         font-size: 46px;
     }
@@ -185,27 +233,32 @@ footer
     .section-two-input-class-2,#button-cls,.section-two-class-3{
         font-size: 35px;
     }
-    #o-1,#o-2{
+    #o-1,#o-2,#id_warn,#success-id,#info-id{
          zoom:2;
     }
     #bbo{
 	margin-left: 11px;
-}
-    #id_warn{
-        zoom:3;
     }
-    #success-id,#info-id{
+    #empty{
+        height: 580px;
+	    width: 100%;
+        overflow-y: scroll;
+    }
+    footer{
+        position: absolute;
+        top:115%;
+        height: 150px;
+    }
+    .Devloped{
         zoom:2;
     }
-    
-       
-    
-    #empty{
-        height: 680px;
-	    width: 100%;
+    #info-id,#info-id-a,#success-id,.alert-info{
+	text-align: center;
+	margin: 2.5% auto;
+	width: 70%;
+}
+    .same-1{
+        display: block;
     }
-    
-    
-    
     
 }
